@@ -6,7 +6,7 @@ on:
       
       grid-args:
         required: true
-        default: --config --instance-types t2.medium
+        default: --config config.yml --instance-types t2.medium
         description: test actions
       
       
@@ -28,7 +28,7 @@ jobs:
           # failed can flipped to running.  check 3 times for flip flop.
           pwd
           ls -al
-          grid run hello.py
+          grid run ${{ github.event.inputs.grid-args }} hello.py
         shell: bash
       
                  
