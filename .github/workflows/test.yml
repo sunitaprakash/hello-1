@@ -25,6 +25,8 @@ jobs:
       - id: gridai-obj-status
         run: |
           # failed can flipped to running.  check 3 times for flip flop.
+          pwd
+          ls -al
           grid run hello.py
         shell: bash
       
