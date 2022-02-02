@@ -18,12 +18,6 @@ provider:
     framework: lightning
     environment:
       GRID_URL: "https://grid.ai"
-    hyper_params:
-      settings:
-        strategy: random_search
-        trials: 2
-       params:
-         learning_rate: uniform
     actions:
       on_build_start:
         - echo "test-4440C67B-40D7-5A93-9BF7-0B4571D8x808403i"
