@@ -23,6 +23,10 @@ provider:
         - echo "test-4440C67B-40D7-5A93-9BF7-0B4571D8x808403i"
         - echo "hello world"
         - echo "did this work?"
+      on_build_end:
+        - echo "test-4440C67B-40D7-5A93-9BF7-0B4571D8x808403i"
+        - echo "hello world"
+        - echo "did this work?"
       on_experiment_start:
         - pip3 install lightning-grid --upgrade
         - echo "ON BEFORE TRAINING"
