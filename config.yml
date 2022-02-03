@@ -3,7 +3,7 @@ provider:
     region: us-east-1
     vendor: aws
     cluster: xxxx
-  train:
+train:
     cpus: 1
     disk_size: 200
     gpus: 0
